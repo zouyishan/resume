@@ -100,11 +100,11 @@
                     &nbsp;
                     <div class="item">
                         <header class="item-hd">
-                            <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>接入RocketMQ的流式diff测试</h3>
+                            <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>流式diff</h3>
                         </header>
                         <div class="item-bd">
                             <p class="section-content">
-                                通过对比测试的prod环境和预发布的版本发送的MQ消息做流失diff。添加注解在每个需要写库的请求(可以是RPC也可以本地写库)上。
+                                通过对比生产环境和预发版环境发送的MQ消息做流式diff。添加注解在每个需要写库或者发消息的请求(可以是RPC也可以本地写库也可以是mq消息)上。
                             </p>
                         </div>
                     </div>
@@ -115,7 +115,7 @@
                 <section id="personal">
                     <header class="section-hd">
                         <span class="section-title-l"></span>
-                        <h2 class="section-title">项目能力</h2>
+                        <h2 class="section-title">项目经验</h2>
                         <span class="section-title-r"></span>
                     </header>
                     <div class="section-bd">
@@ -126,7 +126,7 @@
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
-                                    学习MIT6.824后，尝试用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式理论。
+                                    学习MIT6.824后，尝试用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式理论。项目中主要的困难是Follower节点日志复制没有等到主节点响应直接提交。
                                 </p>
                             </div>
                         </div>
@@ -137,25 +137,13 @@
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
-                                    跟着实验在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统。并成功运行，对操作系统有个大局的认识，知道Linux0.11的具体实现细节。
-                                </p>
-                            </div>
-                        </div>
-                        &nbsp;
-                        <div class="item">
-                            <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>boltdb数据库</h3>
-                                <!-- <a class="item-more"><i class="iconfont icon-homepage"></i></span> -->
-                            </header>
-                            <div class="item-bd">
-                                <p class="section-content">
-                                    熟读boltdb代码。了解数据库的基本组成结构。
+                                    跟着实验在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统(进程信息查看)。并成功运行，对操作系统有个大局的认识，知道Linux0.11的具体实现细节。
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
-
+                &nbsp;
                 <section id="skill">
                     <header class="section-hd">
                         <span class="section-title-l"></span>
@@ -165,21 +153,42 @@
                     <div class="section-bd">
                         <ul class="section-list">
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                近2年后端学习与开发经验，大学期间代码行数超过十万行。
+                                代码规范，有代码洁癖，大学期间代码行数超过十万行。
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                掌握后端开发基本技能，熟悉<em>Mysql</em>基本调优手段。
+                                熟悉boltdb代码，了解数据库的基本组成结构。
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                乐于学习，喜欢不同意见
+                                计算机基础扎实，了解操作系统相关原理。
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                对编程抱有热情，热衷研究底层知识，和新新技术。
+                                熟悉<em>Mysql</em>基本调优手段。
+                            </p></li>
+                            <li><p class="section-content"><i class="iconfont icon-dot"></i>
+                                熟悉掌握Springboot，rocketmq，thrift等开源框架的使用。
                             </p></li>
                         </ul>
                     </div>
                 </section>
-
+                &nbsp;
+                <section id="skill">
+                    <header class="section-hd">
+                        <span class="section-title-l"></span>
+                        <h2 class="section-title">个人评价</h2>
+                        <span class="section-title-r"></span>
+                    </header>
+                    <ul class="section-list">
+                        <li><p class="section-content"><i class="iconfont icon-dot"></i>
+                            自学能力极强，大一接触互联网，大二后端实习。
+                        </p></li>
+                        <li><p class="section-content"><i class="iconfont icon-dot"></i>
+                            乐于学习，喜欢不同意见
+                        </p></li>
+                        <li><p class="section-content"><i class="iconfont icon-dot"></i>
+                            对编程抱有热情，热衷研究底层知识和新技术。
+                        </p></li>
+                    </ul>
+                </section>
             </div>
         </div>
     </div>
