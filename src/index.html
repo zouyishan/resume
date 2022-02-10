@@ -26,7 +26,7 @@
             <section class="contact">
                 <ul>
                     <li></li>
-                    <li><a href="https://github.com/zouyishan" target="_blank"><span class="contact-link">github.com/zouyishan</span><i class="iconfont icon-github"></i></a></li>
+                    <li></li>
                     <li><a href="mailto:honey.qin0522@gamil.com" target="_blank"><span class="contact-link">honey.qin0522@gamil.com</span><i class="iconfont icon-email"></i></a></li>
                     <li><a href="tel:13193112923" target="_blank"><span class="contact-link">13193112923</span><i class="iconfont icon-phone"></i></a></li>
                 </ul>
@@ -56,14 +56,14 @@
                             <div class="item-bd">
                                 <p class="section-content">
                                     负责Tik Tok飞鱼<strong>操作日志服务</strong>
-                                    的编写，为了符合多语言开发条件，利用<em>thrift</em>做为RPC框架。各个业务方想接入操作日志只需通过<em>RocketMQ</em>发送对应日志消息，用<em>Redis</em>防止重复消费，并通过<em>mybatisplus</em>落库即可。同时通过RocketMQ的不同tag发送日志信息到<em>Databus</em>。同时服务提供接口供前端进行调用，查询操作日志。<strong>项目目前已经上线</strong>
+                                    的编写，为了符合多语言开发条件，利用<em>thrift</em>做为RPC框架。各个业务方想接入操作日志只需通过<em>RocketMQ</em>发送对应日志消息，用<em>Redis</em>防止重复消费，消费到消息后落库即可。同时通过RocketMQ的不同tag发送日志信息到<em>Databus</em>。同时用GuavaCache缓存日志类型，并提供接口供前端查询操作日志。
                                 </p>
                             </div>
                         </div>
                         &nbsp;
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>百万级表中刷数据</h3>
+                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>百万表中刷数据</h3>
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
@@ -104,7 +104,7 @@
                         </header>
                         <div class="item-bd">
                             <p class="section-content">
-                                通过对比生产环境和预发版环境发送的MQ消息做流式diff。添加注解在每个需要写库或者发消息的请求(可以是RPC也可以本地写库也可以是mq消息)上。
+                                研发主要的测试手段为单元测试和集成测试，虽然能满足研发同学的测试需求，但是对于QA提测showcase阶段不能直观验收。则上线时可将服务设置为对照组，和线上服务一起消费相同数据，通过业务处理后发送对应数据到不同出流。对比出流即可大致判定要上线的代码时候有问题
                             </p>
                         </div>
                     </div>
@@ -126,7 +126,7 @@
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
-                                    学习MIT6.824后，尝试用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式理论。项目中主要的困难是Follower节点日志复制没有等到主节点响应直接提交。
+                                    学习MIT6.824后，用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式理论。过程中主要遇到的问题为Follower日志复制时对应的操作
                                 </p>
                             </div>
                         </div>
@@ -137,7 +137,7 @@
                             </header>
                             <div class="item-bd">
                                 <p class="section-content">
-                                    跟着实验在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统(进程信息查看)。并成功运行，对操作系统有个大局的认识，知道Linux0.11的具体实现细节。
+                                    跟着实验在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统(进程信息查看)，并成功运行。对操作系统有大局的认识，知道Linux0.11具体实现细节。
                                 </p>
                             </div>
                         </div>
@@ -156,16 +156,16 @@
                                 代码规范，有代码洁癖，大学期间代码行数超过十万行。
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                熟悉boltdb代码，了解数据库的基本组成结构。
+                                有基本工程能力，业务需求明确，能独立开发服务
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                计算机基础扎实，了解操作系统相关原理。
+                                熟悉Mysql基本调优手段。
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                熟悉<em>Mysql</em>基本调优手段。
+                                熟悉掌握Springboot，rocketmq，thrift，Redis，Elasticsearch等开源框架的使用。
                             </p></li>
                             <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                熟悉掌握Springboot，rocketmq，thrift等开源框架的使用。
+                                计算机基础扎实。
                             </p></li>
                         </ul>
                     </div>
@@ -179,13 +179,13 @@
                     </header>
                     <ul class="section-list">
                         <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                            自学能力极强，大一接触互联网，大二后端实习。
+                            主动性强，大一接触编程到现在皆为主动自学。
                         </p></li>
                         <li><p class="section-content"><i class="iconfont icon-dot"></i>
                             乐于学习，喜欢不同意见
                         </p></li>
                         <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                            对编程抱有热情，热衷研究底层知识和新技术。
+                            对编程抱有热情，热衷研究底层源码和新技术。
                         </p></li>
                     </ul>
                 </section>
