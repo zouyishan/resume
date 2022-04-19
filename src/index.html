@@ -15,7 +15,7 @@
                     <h1>邹沂珊<small>ZouYiShan</small></h1>
                 </div>
                 <div class="job">
-                    <h2>Java暑期实习生<small> / 北京</small></h2>
+                    <h2>NewSQL暑期实习<small> / 成都</small></h2>
                 </div>
             </section>
             <section class="info">
@@ -51,11 +51,12 @@
                         &nbsp;
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i> Tik Tok飞鱼</h3>
+                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i> Tik Tok飞鱼</h3>
                             </header>
+                            &nbsp;
                             <div class="item-bd">
-                                <p class="section-content">
-                                    负责Tik Tok飞鱼<strong>操作日志服务</strong>
+                                <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
+                                    负责Tik Tok飞鱼操作日志服务
                                     的编写，为了符合多语言开发条件，利用<em>thrift</em>做为RPC框架。各个业务方想接入操作日志只需通过<em>RocketMQ</em>发送对应日志消息，用<em>Redis</em>防止重复消费，消费到消息后落库即可。同时通过RocketMQ的不同tag发送日志信息到<em>Databus</em>。同时用GuavaCache缓存日志类型，并提供接口供前端查询操作日志。
                                 </p>
                             </div>
@@ -63,10 +64,11 @@
                         &nbsp;
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>百万表中刷数据</h3>
+                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>百万表中刷数据</h3>
                             </header>
+                            &nbsp;
                             <div class="item-bd">
-                                <p class="section-content">
+                                <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
                                     由于数据库表中头像图片列所用的cdn存在违规隐患，需要重新上传。
                                     在一个大事务中，先拿到原有列的图片链接，通过链接下载成二进制流以后，通过调RPC接口重新上传图片，返回一个新的url，再将新的url落库。
                                     对于网络IO失败不能回滚，而是直接打日志，落库失败后会重新尝试一次落库，仍然失败后数据库回滚。
@@ -76,10 +78,11 @@
                         &nbsp;
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>增加维护接口</h3>
+                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>增加维护接口</h3>
                             </header>
+                            &nbsp;
                             <div class="item-bd">
-                                <p class="section-content">
+                                <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
                                     在职期间增加和维护的接口十多个。对代码规范有强烈要求。
                                 </p>
                             </div>
@@ -100,10 +103,11 @@
                     &nbsp;
                     <div class="item">
                         <header class="item-hd">
-                            <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>流式diff</h3>
+                            <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>流式diff</h3>
                         </header>
+                        &nbsp;
                         <div class="item-bd">
-                            <p class="section-content">
+                            <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
                                 研发主要的测试手段为单元测试和集成测试，虽然能满足研发同学的测试需求，但是对于QA提测showcase阶段不能直观验收。则上线时可将服务设置为对照组，和线上服务一起消费相同数据，通过业务处理后发送对应数据到不同出流。对比出流即可大致判定要上线的代码时候有问题
                             </p>
                         </div>
@@ -121,23 +125,25 @@
                     <div class="section-bd">
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>Java实现Raft分布式共识算法</h3>
+                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>Java实现Raft分布式共识算法</h3>
                                 <!-- <a class="item-more"><i class="iconfont icon-homepage"></i></span> -->
                             </header>
+                            &nbsp;
                             <div class="item-bd">
-                                <p class="section-content">
-                                    学习MIT6.824后，用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式理论。过程中主要遇到的问题为Follower日志复制时对应的操作
+                                <p class="section-content" style="letter-spacing: 2px; font-size: 16px;">
+                                    学习MIT6.824后，用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式共识算法，熟悉raft, mutil-paxos, basic-paxos理论。
                                 </p>
                             </div>
                         </div>
                         &nbsp;
                         <div class="item">
                             <header class="item-hd">
-                                <h3 class="item-name" style="font-size: medium;"><i class="iconfont icon-dot"></i>Linux0.11实验</h3>
+                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>Linux0.11实验</h3>
                             </header>
+                            &nbsp;
                             <div class="item-bd">
-                                <p class="section-content">
-                                    跟着实验在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统(进程信息查看)，并成功运行。对操作系统有大局的认识，知道Linux0.11具体实现细节。
+                                <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
+                                    在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统(进程信息查看)，并成功编译运行。对操作系统有大局的认识。同时阅读过Linux2.6.39内存管理，文件系统相关代码，了解分布式文件系统理论。
                                 </p>
                             </div>
                         </div>
@@ -152,20 +158,16 @@
                     </header>
                     <div class="section-bd">
                         <ul class="section-list">
-                            <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                代码规范，有代码洁癖，大学期间代码行数超过十万行。
+                            <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
+                                热爱分布式存储领域，对NewSQL领域十分有兴趣，阅读过TiDB词法解析，goyacc生成语法树相关代码，熟悉TiDB相关处理流程。了解TiKV相关流程，TiKV通过range进行sharding，通过multi-raft进行共识，和例如Follower Read相关对raft的优化。
                             </p></li>
-                            <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                有基本工程能力，业务需求明确，能独立开发服务
+                            &nbsp;
+                            <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
+                                数据库基础扎实，了解单机数据库，分布式数据库，存算分离数据库的发展和整体架构。阅读过BigTable论文，了解不同数据结构作为索引的优劣。
                             </p></li>
-                            <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                熟悉Mysql基本调优手段。
-                            </p></li>
-                            <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                熟悉掌握Springboot，rocketmq，thrift，Redis，Elasticsearch等开源框架的使用。
-                            </p></li>
-                            <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                                计算机基础扎实。
+                            &nbsp;
+                            <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
+                                涉猎redis，nginx，leveldb，boltDB开源项目。了解内存分配机理和对应数据结构在开源项目中的应用。
                             </p></li>
                         </ul>
                     </div>
@@ -178,14 +180,11 @@
                         <span class="section-title-r"></span>
                     </header>
                     <ul class="section-list">
-                        <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                            主动性强，大一接触编程到现在皆为主动自学。
-                        </p></li>
-                        <li><p class="section-content"><i class="iconfont icon-dot"></i>
-                            乐于学习，喜欢不同意见
-                        </p></li>
-                        <li><p class="section-content"><i class="iconfont icon-dot"></i>
+                        <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
                             对编程抱有热情，热衷研究底层源码和新技术。
+                        </p></li>
+                        <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
+                            主动性强，大一接触编程到现在皆为主动自学。
                         </p></li>
                     </ul>
                 </section>
