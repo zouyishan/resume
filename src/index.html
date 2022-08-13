@@ -15,7 +15,7 @@
                     <h1>邹沂珊<small>ZouYiShan</small></h1>
                 </div>
                 <div class="job">
-                    <h2>NewSQL暑期实习<small> / 成都</small></h2>
+                    <h2>数据库-HTAP<small> / 成都</small></h2>
                 </div>
             </section>
             <section class="info">
@@ -27,7 +27,7 @@
                 <ul>
                     <li></li>
                     <li></li>
-                    <li><a href="mailto:honey.qin0522@gmail.com" target="_blank"><span class="contact-link">honey.qin0522@gmail.com</span><i class="iconfont icon-email"></i></a></li>
+                    <li><a href="mailto:honey.qin0522@gmail.com" target="_blank"><span class="contact-link">zouyishan.virtual@bytedance.com</span><i class="iconfont icon-email"></i></a></li>
                     <li><a href="tel:13193112923" target="_blank"><span class="contact-link">13193112923</span><i class="iconfont icon-phone"></i></a></li>
                 </ul>
             </section>
@@ -45,7 +45,7 @@
                             <header class="item-hd" style="font-size: 16px;">
                                 <span style="font-size: 18px;">2021.04 ~ 2021.09 
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp; 北京字节跳动科技有限公司</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; 北京字节跳动飞鱼后端实习</span>
                             </header>
                         </div>
                         &nbsp;
@@ -53,50 +53,22 @@
                             <header class="item-hd">
                                 <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i> Tik Tok飞鱼</h3>
                             </header>
-                            &nbsp;
                             <div class="item-bd">
                                 <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
-                                    负责Tik Tok飞鱼操作日志服务
-                                    的编写，为了符合多语言开发条件，利用<em>thrift</em>做为RPC框架。各个业务方想接入操作日志只需通过<em>RocketMQ</em>发送对应日志消息，用<em>Redis</em>防止重复消费，消费到消息后落库即可。同时通过RocketMQ的不同tag发送日志信息到<em>Databus</em>。同时用GuavaCache缓存日志类型，并提供接口供前端查询操作日志。
-                                </p>
-                            </div>
-                        </div>
-                        &nbsp;
-                        <div class="item">
-                            <header class="item-hd">
-                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>百万表中刷数据</h3>
-                            </header>
-                            &nbsp;
-                            <div class="item-bd">
-                                <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
-                                    由于数据库表中头像图片列所用的cdn存在违规隐患，需要重新上传。
-                                    在一个大事务中，先拿到原有列的图片链接，通过链接下载成二进制流以后，通过调RPC接口重新上传图片，返回一个新的url，再将新的url落库。
-                                    对于网络IO失败不能回滚，而是直接打日志，落库失败后会重新尝试一次落库，仍然失败后数据库回滚。
-                                </p>
-                            </div>
-                        </div>
-                        &nbsp;
-                        <div class="item">
-                            <header class="item-hd">
-                                <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>增加维护接口</h3>
-                            </header>
-                            &nbsp;
-                            <div class="item-bd">
-                                <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
-                                    在职期间增加和维护的接口十多个。对代码规范有强烈要求。
+                                    负责Tik Tok飞鱼操作日志服务的开发, 使用thrift做为RPC框架。各个业务方想接入操作日志只需通过向RocketMQ发送对应日志消息, 用Redis防止重复消费, 消费到消息后落库即可。并同时提供接口供前端查询操作日志。
                                 </p>
                             </div>
                         </div>
                     </div>
                 </section>
-
+                &nbsp;
                 <section id="practice">
                     <div class="section-bd">
                         <div class="item item-main">
                             <header class="item-hd" style="font-size: 16px;">
-                                <span style="font-size: 18px;">2021.12 ~ 至今 
+                                <span style="font-size: 18px;">2021.12 ~ 2022.06
                                     &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
-                                    &nbsp;&nbsp;&nbsp;&nbsp; 北京字节跳动科技有限公司</span>
+                                    &nbsp;&nbsp;&nbsp;&nbsp; 北京字节跳动飞鱼后端实习</span>
                             </header>
                         </div>
                     </div>
@@ -105,10 +77,54 @@
                         <header class="item-hd">
                             <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>流式diff</h3>
                         </header>
-                        &nbsp;
                         <div class="item-bd">
                             <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
-                                研发主要的测试手段为单元测试和集成测试，虽然能满足研发同学的测试需求，但是对于QA提测showcase阶段不能直观验收。则上线时可将服务设置为对照组，和线上服务一起消费相同数据，通过业务处理后发送对应数据到不同出流。对比出流即可大致判定要上线的代码时候有问题
+                                负责小组内所有服务接入bytediff平台, bytediff的作用是复制线上真实流量, 请求待测服务测试环境和基准环境, 分别拿到基准版本和测试版本返回的response集合, 通过对比response数据可反应代码修改对结果的影响。服务每次跑出来的结果符合预期才能合入master。
+                            </p>
+                        </div>
+                    </div>
+                </section>
+                &nbsp;
+                <section id="practice">
+                    <div class="section-bd">
+                        <div class="item item-main">
+                            <header class="item-hd" style="font-size: 16px;">
+                                <span style="font-size: 18px;">2022.06 ~ 至今
+                                    &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+                                    &nbsp;&nbsp;&nbsp;&nbsp;成都字节跳动数据库-HTAP实习</span>
+                            </header>
+                        </div>
+                    </div>
+                    &nbsp;
+                    <div class="item">
+                        <header class="item-hd">
+                            <h3 class="item-name" style="font-size: 20px;"><i class="iconfont icon-dot"></i>tp数据转ap数据</h3>
+                        </header>
+                        <div class="item-bd">
+                            <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
+                                负责tp数据转ap数据logstore, metaservice扩展工具的开发, 同时支持multi-master版本的扩展工具。同时增强tp转ap过程中io流程的稳定性。
+                            </p>
+                        </div>
+                    </div>
+                    &nbsp;
+                    <div class="item">
+                        <header class="item-hd">
+                            <h3 class="item-name" style="font-size: 19px;"><i class="iconfont icon-dot"></i>分布式框架统一列存代码ut</h3>
+                        </header>
+                        <div class="item-bd">
+                            <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
+                                分布式框架版本统一后更加利于不同存储引擎接入pagestore框架, 负责列存logApply, 后台数据迁移, 扩展工具代码的ut。发现后台数据迁移过程中空指针引发的core dump问题。
+                            </p>
+                        </div>
+                    </div>
+                    &nbsp;
+                    <div class="item">
+                        <header class="item-hd">
+                            <h3 class="item-name" style="font-size: 19px;"><i class="iconfont icon-dot"></i>日常线上运维</h3>
+                        </header>
+                        <div class="item-bd">
+                            <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
+                                维护绩效数据库tp转ap数据3次, 日常维护dev流水线, 配合新版本测试, 存储侧支持ipv6部署和运维。
                             </p>
                         </div>
                     </div>
@@ -131,7 +147,7 @@
                             &nbsp;
                             <div class="item-bd">
                                 <p class="section-content" style="letter-spacing: 2px; font-size: 16px;">
-                                    学习MIT6.824后，用Java写了个Raft。成功完成选主部分，日志复制实现大部分。熟悉分布式共识算法，熟悉raft, mutil-paxos, basic-paxos理论。
+                                    学习MIT6.824后, 用Java写了个Raft。成功完成选主部分, 日志复制实现大部分。熟悉分布式共识算法, 熟悉raft, gossip, quorum理论。
                                 </p>
                             </div>
                         </div>
@@ -143,7 +159,7 @@
                             &nbsp;
                             <div class="item-bd">
                                 <p class="section-content" style="font-size: 16px; letter-spacing: 2px;">
-                                    在Linux0.11的基础上，修改了引导程序，增加了系统调用，信号量，共享内存，Proc文件系统(进程信息查看)，并成功编译运行。对操作系统有大局的认识。同时阅读过Linux2.6.39内存管理，文件系统相关代码，了解分布式文件系统理论。
+                                    在Linux0.11的基础上, 修改了引导程序, 增加了系统调用, 信号量, 共享内存, Proc文件系统(进程信息查看), 并成功编译运行。对操作系统有大局的认识。
                                 </p>
                             </div>
                         </div>
@@ -159,20 +175,37 @@
                     <div class="section-bd">
                         <ul class="section-list">
                             <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
-                                热爱分布式存储领域，对NewSQL领域十分有兴趣，阅读过TiDB词法解析，goyacc生成语法树相关代码，熟悉TiDB相关处理流程。了解TiKV相关流程，TiKV通过range进行sharding，通过multi-raft进行共识，和例如Follower Read相关对raft的优化。
+                                热爱分布式数据库领域, 对Htap十分感兴趣, 熟悉bytehtap工程代码, 了解bytehtap各个组件的运行模式。阅读过htap各组件存储层代码。
                             </p></li>
                             &nbsp;
                             <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
-                                数据库基础扎实，了解单机数据库，分布式数据库，存算分离数据库的发展和整体架构。阅读过BigTable论文，了解不同数据结构作为索引的优劣。
+                                数据库基础扎实, 了解单机数据库, 分布式数据库, 存算分离数据库的发展和整体架构。阅读过Aurora论文, 熟悉NDB架构。
                             </p></li>
                             &nbsp;
                             <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
-                                涉猎redis，nginx，leveldb，boltDB开源项目。了解内存分配机理和对应数据结构在开源项目中的应用。
+                                熟悉kudu delta store存储引擎代码, 正在学习base store文件系统相关理念和代码。
                             </p></li>
+                            &nbsp;
                         </ul>
                     </div>
                 </section>
                 &nbsp;
+                <section id="skill">
+                    <header class="section-hd">
+                        <span class="section-title-l"></span>
+                        <h2 class="section-title">在校经历</h2>
+                        <span class="section-title-r"></span>
+                    </header>
+                    <ul class="section-list">
+                        <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
+                            北京市团体程序设计天梯赛二等奖
+                        </p></li>
+                        <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
+                            智能小车巡线三等奖
+                        </p></li>
+                    </ul>
+                </section>
+                
                 <section id="skill">
                     <header class="section-hd">
                         <span class="section-title-l"></span>
@@ -181,10 +214,10 @@
                     </header>
                     <ul class="section-list">
                         <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
-                            对编程抱有热情，热衷研究底层源码和新技术。
+                            对编程抱有热情, 热衷研究底层源码和新技术。
                         </p></li>
                         <li><p class="section-content" style="font-size: 16px; letter-spacing: 2px;"><i class="iconfont icon-dot"></i>
-                            主动性强，大一接触编程到现在皆为主动自学。
+                            主动性强, 有不会的会和mentor请教, 直到弄懂。
                         </p></li>
                     </ul>
                 </section>
